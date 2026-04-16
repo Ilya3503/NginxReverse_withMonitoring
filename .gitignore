@@ -1,0 +1,9 @@
+.database/data/
+.database/data
+
+venv/
+.venv/
+.env
+
+.idea/
+.idea
