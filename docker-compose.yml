@@ -9,7 +9,7 @@ services:
       POSTGRES_PASSWORD: admin
     volumes:
       - ./data:/var/lib/postgresql/data
-      - ./database/init.sql:/docker-entrypoint-initdb.d/
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
     ports:
       - "5432:5432"
 
