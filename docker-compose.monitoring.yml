@@ -4,8 +4,6 @@ services:
     container_name: nginx-exporter
     command:
       - -nginx.scrape-uri=http://nginx/nginx_status
-    depends_on:
-      - nginx
     networks:
       - app-network
 
