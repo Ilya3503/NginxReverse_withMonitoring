@@ -7,4 +7,4 @@ NGINX: Reverse Proxy, API Gateway, Load Balancer.
 
 
 
-
+![img_3.png](img_3.png)
