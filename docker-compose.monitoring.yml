@@ -7,8 +7,7 @@ services:
     depends_on:
       - nginx
     networks:
-      - monitoring
-      - default
+      - app-network
 
   prometheus:
     image: prom/prometheus:latest
@@ -18,7 +17,7 @@ services:
     ports:
       - "9090:9090"
     networks:
-      - monitoring
+      - app-network
 
   grafana:
     image: grafana/grafana:latest
@@ -26,7 +25,8 @@ services:
     ports:
       - "3000:3000"
     networks:
-      - monitoring
+      - app-network
 
 networks:
-  monitoring:
+  app-network:
+    external: true
